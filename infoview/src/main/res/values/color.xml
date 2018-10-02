@@ -3,4 +3,5 @@
     <color name="infoViewSuccess">#00a152</color>
     <color name="infoViewInfo">#999999</color>
     <color name="infoViewWarning">#ff5722</color>
+    <color name="infoViewDefaultTextColor">#454545</color>
 </resources>
