@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="infoViewSuccess">#00a152</color>
+    <color name="infoViewInfo">#999999</color>
+    <color name="infoViewWarning">#ff5722</color>
+</resources>
