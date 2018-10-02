@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InfoView">
+        <attr name="infoIcon" format="integer" />
+        <attr name="infoText" format="string" />
+        <attr name="infoTitle" format="string" />
+        <attr name="infoType" />
+    </declare-styleable>
+
+    <attr name="infoType" format="enum">
+        <enum name="info" value="0" />
+        <enum name="warning" value="1" />
+        <enum name="success" value="2" />
+    </attr>
+
+</resources>
