@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="InfoView">
+    <declare-styleable name="CustomInfoView">
         <attr name="infoIcon" format="integer" />
         <attr name="infoText" format="string" />
         <attr name="infoTitle" format="string" />
