@@ -55,7 +55,7 @@ class InfoView constructor(context: Context,
         try {
             mInfoType = InfoType.fromValue(fields.getInt(R.styleable.CustomInfoView_infoType,
                     InfoType.INFO.value))
-            mIconRes = fields.getInt(R.styleable.CustomInfoView_infoIcon, 0)
+            mIconRes = fields.getInt(R.styleable.CustomInfoView_infoIcon, NO_RES)
             mInfoTitle = fields.getString(R.styleable.CustomInfoView_infoTitle)
             mInfoMessage = fields.getString(R.styleable.CustomInfoView_infoText)
         } finally {
