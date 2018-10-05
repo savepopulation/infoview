@@ -6,18 +6,12 @@ import android.util.AttributeSet
 import android.widget.LinearLayout
 import android.support.annotation.DrawableRes
 import android.support.annotation.ColorRes
-import com.raqun.infoview.InfoView.InfoType
 import android.view.ViewGroup
 import android.support.annotation.NonNull
 import android.widget.ImageView
 import android.widget.TextView
 import android.view.LayoutInflater
-import com.raqun.infoview.InfoView.InfoType
 import android.content.res.TypedArray
-
-
-
-
 
 
 @SuppressLint("ViewConstructor")
@@ -29,7 +23,7 @@ class InfoView constructor(context: Context,
      * Vars
      */
 
-    private var mInfoType = InfoType.INFO
+    private var mInfoType: InfoType?
 
     @DrawableRes
     private var mIconRes: Int = NO_RES
@@ -75,37 +69,5 @@ class InfoView constructor(context: Context,
         mTextViewTitle = view.findViewById(R.id.title)
         mTextViewMessage = view.findViewById(R.id.message)
         mContainer = view.findViewById(R.id.container)
-
-        initView()
-    }
-
-    // INFO TYPES
-    enum class InfoType private constructor(private val value: Int,
-                                            @param:DrawableRes @field:DrawableRes
-                                            private val backgroundRes: Int,
-                                            @param:ColorRes @field:ColorRes
-                                            private val titleColorRes: Int,
-                                            @param:ColorRes @field:ColorRes
-                                            private val infoColorRes: Int,
-                                            @param:DrawableRes @field:DrawableRes
-                                            private val iconRes: Int) {
-
-        // TODO Uncomment when icons available
-        //INFO(0, R.drawable.background_info_view_info, R.color.infoTextInfoColor, R.color.infoTextInfoColor, 0),
-        //WARNING(1, R.drawable.background_info_view_warning, R.color.infoTextWarningColor, R.color.infoTextInfoColor, 0),
-        //SUCCESS(2, R.drawable.background_info_view_success, R.color.infoTextSuccessColor, R.color.infoTextSuccessColor, 0);
-
-        companion object {
-
-            fun fromValue(value: Int): InfoType? {
-                for (type in values()) {
-                    if (type.value == value) {
-                        return type
-                    }
-                }
-
-                return null
-            }
-        }
     }
 }
