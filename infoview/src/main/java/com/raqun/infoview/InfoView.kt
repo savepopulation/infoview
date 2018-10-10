@@ -131,6 +131,7 @@ class InfoView constructor(context: Context,
 
         mTextViewTitle.setTextColor(ContextCompat.getColor(context, mInfoType!!.titleColorRes))
         mTextViewMessage.setTextColor(ContextCompat.getColor(context, mInfoType!!.infoColorRes))
+        mImageViewIcon.setColorFilter(ContextCompat.getColor(mImageViewIcon.context, mInfoType!!.titleColorRes))
         mContainer.background = ContextCompat.getDrawable(context, mInfoType!!.backgroundRes)
     }
 
