@@ -36,10 +36,6 @@ class InfoView constructor(context: Context,
 
     private var mInfoMessage: CharSequence? = null
 
-    companion object {
-        private const val NO_RES = 0
-    }
-
     /**
      * Views
      */
@@ -157,5 +153,9 @@ class InfoView constructor(context: Context,
         if (TextUtils.isEmpty(mInfoMessage)) {
             mTextViewMessage.visibility = View.GONE
         }
+    }
+
+    companion object {
+        private const val NO_RES = 0
     }
 }
