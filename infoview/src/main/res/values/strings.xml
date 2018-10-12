@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">InfoView</string>
-
-    <!-- Titles -->
-    <string name="info_title">Info</string>
-    <string name="success_title">Success</string>
-    <string name="warning_title">Warning</string>
-
-    <!-- Descriptions -->
-    <string name="desc">This is an example info view description.</string>
 </resources>
