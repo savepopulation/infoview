@@ -20,10 +20,10 @@ import android.text.TextUtils
 
 
 @SuppressLint("ViewConstructor")
-class InfoView constructor(context: Context,
-                           attrs: AttributeSet? = null,
-                           defStyle: Int = 0,
-                           defStyleRes: Int = 0) : LinearLayout(context, attrs) {
+class InfoView @JvmOverloads constructor(context: Context,
+                                         attrs: AttributeSet? = null,
+                                         defStyle: Int = 0,
+                                         defStyleRes: Int = 0) : LinearLayout(context, attrs) {
     /**
      * Vars
      */
