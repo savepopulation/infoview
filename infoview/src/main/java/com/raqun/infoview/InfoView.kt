@@ -133,6 +133,7 @@ class InfoView @JvmOverloads constructor(context: Context,
         mTextViewMessage.setTextColor(ContextCompat.getColor(context, mInfoType!!.infoColorRes))
         mImageViewIcon.setColorFilter(ContextCompat.getColor(mImageViewIcon.context, mInfoType!!.titleColorRes))
         mContainer.background = ContextCompat.getDrawable(context, mInfoType!!.backgroundRes)
+        mIconRes = mInfoType!!.iconRes
     }
 
     private fun initIconRes() =
